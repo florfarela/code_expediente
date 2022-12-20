@@ -1,0 +1,90 @@
+*{padding: 0; margin: 0; font-family: 'Rubik', sans-serif;}
+.header{width: 100%; 
+       height: auto; 
+       background-color: red;}
+.he-one{width: 100%;
+        height: 100px; 
+        background-color:#CEE6F7; 
+        border:1px solid #CEE6F7; 
+        position: relative; 
+        text-align: center;
+       box-shadow: 1px 1px 3px white;
+}
+.he-body{width: 100%;
+        height: auto;
+        background: #373B44;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        padding: 25px 25px;
+        overflow: auto;}
+.container-boton{ width: 100%; height: 45px; background-color:none; text-align: left;}
+#bto{background-color:#003456 ;}
+#bto:hover{cursor: pointer; 
+       border: 1px solid #003456 ;  
+       text-decoration: none; 
+       margin: 10px 10px;
+        background-color:#CEE6F7; 
+        border: 1px solid #003456;
+        color:#003456; 
+        transition: 0.5s;
+         box-shadow: 2px 2px 3px #003456,-2px -2px 3px #003456;}
+.he-footer{width: 100%;
+            height: 100px; 
+            background-color: #CEE6F7;
+             box-shadow: -3px -3px 6px black;}
+.logo{ width:100px; height: 100px; border-radius: 365px;
+       position: absolute; top:5px; left: 10px; 
+       background-image: url(../img/clinica2.png);
+       background-repeat: no-repeat;
+       background-size: 100% 100%;
+
+}
+.title{padding: 30px 10px; 
+       color: #003456; 
+       text-shadow: 1px 1px 2px black; }
+#conta-form{background-color: rgba(255, 255, 255, .15);  
+            backdrop-filter: blur(5px);
+            border-radius: 5px;
+            padding: 10px 10px;
+            box-shadow: 2px 2px 3px black,-2px -2px 3px black;
+
+       
+       }
+.htm{background: #373B44;  /* fallback for old browsers */
+       background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+       background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#form{background-color: rgba(0,0,0,0.3); 
+       color:whitesmoke;
+        width: 50%; 
+        height: 50px;}
+.form-label{color:whitesmoke;}
+#name{color:grey;}
+.card-header{text-align: left;}
+#card{ margin-top: 13px;
+        box-shadow: 3px 3px 6px black,-3px -3px 6px black; 
+        border-radius: 10px; background-color: rgba(0,0,0,0.2); color: whitesmoke;}
+.state{float: right; padding: 10px 10px;
+        background-color:#CEE6F7 ; 
+        border-radius: 5px; color:#003456 ;}
+.boton{background-color: #CEE6F7;
+        padding: 10px 10px;
+         border-radius: 5px; 
+         text-decoration: none;}
+ 
+#card-foo{padding: 20px 10px;}
+.logout{position: absolute; 
+       top: 20px; 
+       right: 20px; 
+       text-decoration: none;}
+.card-body{background-color: rgba(6, 51, 135, 0.539);}
+.boton:hover{cursor: pointer; 
+             border: 1px solid #003456 ;  
+             text-decoration: none; 
+             margin: 10px 10px;
+              background-color: rgba(6, 51, 135, 0.539); 
+              color:#CEE6F7; 
+              transition: 0.3s;
+               box-shadow: 2px 2px 3px #CEE6F7,-2px -2px 3px #CEE6F7;} 
+#card-header{background-color:none;}
+.titulo-name{background-color:#CEE6F7; padding: 10px 10px; border-radius: 0px; color: #003456;}
