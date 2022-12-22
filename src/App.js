@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter, Routes, Route} from'react-router-dom';
 import DoctorPanel from './componets/DoctorPanel';
 import EditPatient from './componets/EditPatient';
+import PatientView from './componets/PatientView';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
      <Routes>
       <Route path='/' element={<DoctorPanel/>}/>
       <Route path='/patient-update/:id' element={<EditPatient/>}/>
+      <Route path='/' element={<PatientView/>}/>
       <Route/>
 
      </Routes>
