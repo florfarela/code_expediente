@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/heading-has-content */
 
 import axios from "axios";
 import React, {useState, useEffect} from "react";
@@ -36,10 +37,10 @@ const EditPatient = () => {
           observations : observations,
           severity : severity,
           idDoctor: idDoctor,
-           idRoles: idRoles,
+          idRoles: idRoles,
           password: password,
         })
-        navigate('/')
+        navigate('/DoctorPanel')
     }
 
     useEffect( () =>{
@@ -159,13 +160,14 @@ const EditPatient = () => {
                 </div>
                 <div className='mb-3'>
                     <label className='form-label'>Observations</label>
-                    <input
-                        value={observations}
-                        onChange={ (e)=> setObservations(e.target.value)}
-                        type='text'
-                        className='form-control'
-                        id="form"
-                    />
+                    <br/>
+                    <textarea value={observations} 
+                     onChange={ (e)=> setObservations(e.target.value)} 
+                     type='text'
+                     rows="5" cols="35"
+                     id="form">
+                     </textarea>
+                   
                 </div>
                 <div className='mb-3'>
                     <label className='form-label'>Severity</label>
