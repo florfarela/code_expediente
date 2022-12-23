@@ -1,4 +1,4 @@
-/* eslint-disable jsx-a11y/heading-has-content */
+
 
 import axios from "axios";
 import React, {useState, useEffect} from "react";

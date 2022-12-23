@@ -39,7 +39,7 @@ const EditPatient_Receptionist = () => {
             idRoles: idRoles,
             password: password
         })
-        navigate('/')
+        navigate('/showReceptionist')
     }
 
     useEffect( () => {
@@ -60,7 +60,7 @@ const EditPatient_Receptionist = () => {
             setPassword(response.data.password)
         }
         getPatientById()
-    }, [])
+    }, [id])
     
   return (
     <div>
@@ -73,7 +73,7 @@ const EditPatient_Receptionist = () => {
         <form onSubmit={update}>
         <div className='mb-3'>
           <div className='container'>
-            <label className='form-label'>DUI without hyphen</label>
+            <label className='form-label'>Dui</label>
             <input value={dui} onChange={(e)=> setDui(e.target.value)} type="number" className='form-control'/>
           </div>
           <div className='mb-3'>
@@ -113,8 +113,8 @@ const EditPatient_Receptionist = () => {
             <input value={idDoctor} onChange={(e)=> setIdDoctor(e.target.value)} type="text" className='form-control'/>
           </div>
           <div className='mb-3'>
-            <label className='form-label'>IdRoles</label>
-            <input value={idRoles} onChange={(e)=> setIdRoles(e.target.value)} type="text" className='form-control'/>
+            
+            <input value={idRoles} onChange={(e)=> setIdRoles(e.target.value)} type="hidden" className='form-control'/>
           </div>
           <div className='mb-3'>
             <label className='form-label'>Password</label>

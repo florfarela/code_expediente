@@ -1,7 +1,6 @@
 import React,{useEffect,useState} from "react";
 
 import axios from "axios";
-import {Link}from 'react-router-dom'
 const DoctorPanel = () => {
 const endpoint = 'http://127.0.0.1:8000/api';
 //ruta donde vamos a traer nuestro endpoint
@@ -41,17 +40,14 @@ return (
             </div>
             {/* <div class="card-footer text-muted" id="card-foo">
             <Link to={`patient-update/${patient.id}`} className="boton">Edit Patient</Link>
-            </div> */}
+            </div>.........posibles modificaciones */}
             </div>
             ))}
           
          </div>
           
         </div>
-        <div className="he-footer">
-          
-         
-        </div>
+        <div className="he-footer"></div>
 
         
       

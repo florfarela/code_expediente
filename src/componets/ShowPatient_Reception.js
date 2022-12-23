@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import {Link} from 'react-router-dom';
@@ -30,29 +31,27 @@ const ShowPatient_Receptionist = () => {
 
             <div className='he-body'>   
             <div className='container'>
-                <Link to='/create' className='btn btn-success mt-2 mb-2 float-end text-white'>Create</Link>
+                <Link to='/create' className='btn btn-success mt-2 mb-2 float-end text-white' id="crea-boton">Create</Link>
             
                 {patients.map((patient) => (
                     <>
                     <br/><br/><br/>
                     <div className="card text-center" key={patient.id} id='card'>        
-                        <div className="card-header" id='card-header'> {patient.name} 
+                <div className="card-header" id='card-header'>Name: {patient.name} 
                             <h6 className='state'>{patient.severity}</h6>
                         </div>
                         <div className="card-header">DUI: {patient.dui} </div>
                         <div className='card-header'>Age: {patient.age} </div>
                         <h6 className='card-header'>Telefono: {patient.phone} </h6>
                         <h6 className='card-header'>Adress: {patient.adress} </h6>
-                        <div className='card-header'>Diagnosis: {patient.diagnosis}</div>
-                        <div className='admitted'>Admitted: {patient.admitted}</div>
-                        <div className='observation'>Observation:</div>
+                        
                         <div className='card-body'>
                             <p className='card-text'> {patient.observation} </p>
                         </div>
 
                         <div className='card-footer text-muted' id='card-foo'>
-                            <Link to={`/edit/${patient.id}`} className='boton'>Edit</Link>
-                        <button onClick={()=> deletePatient(patient.id)} className='boton'>Delete</button>
+                            <Link to={`/edit/${patient.id}`} className='botones'>Edit</Link>
+                        <button onClick={()=> deletePatient(patient.id)} className='botones'>Delete</button>
                         </div>
                     </div>
                     <br/>
